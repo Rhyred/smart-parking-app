@@ -1,0 +1,220 @@
+{
+  "parkingSlots": {
+    "slot1": {
+      "id": "slot1",
+      "status": "available",
+      "sensorId": "sensor1",
+      "zone": "A",
+      "updatedAt": 1715511600000
+    },
+    "slot2": {
+      "id": "slot2",
+      "status": "occupied",
+      "sensorId": "sensor2",
+      "zone": "A",
+      "updatedAt": 1715511600000
+    },
+    "slot3": {
+      "id": "slot3",
+      "status": "available",
+      "sensorId": "sensor3",
+      "zone": "A",
+      "updatedAt": 1715511600000
+    },
+    "slot4": {
+      "id": "slot4",
+      "status": "booked",
+      "sensorId": "sensor4",
+      "zone": "B",
+      "updatedAt": 1715511600000
+    },
+    "slot5": {
+      "id": "slot5",
+      "status": "available",
+      "sensorId": "sensor5",
+      "zone": "B",
+      "updatedAt": 1715511600000
+    },
+    "slot6": {
+      "id": "slot6",
+      "status": "available",
+      "sensorId": "sensor6",
+      "zone": "B",
+      "updatedAt": 1715511600000
+    },
+    "slot7": {
+      "id": "slot7",
+      "status": "occupied",
+      "sensorId": "sensor7",
+      "zone": "C",
+      "updatedAt": 1715511600000
+    },
+    "slot8": {
+      "id": "slot8",
+      "status": "available",
+      "sensorId": "sensor8",
+      "zone": "C",
+      "updatedAt": 1715511600000
+    },
+    "slot9": {
+      "id": "slot9",
+      "status": "available",
+      "sensorId": "sensor9",
+      "zone": "C",
+      "updatedAt": 1715511600000
+    },
+    "slot10": {
+      "id": "slot10",
+      "status": "booked",
+      "sensorId": "sensor10",
+      "zone": "D",
+      "updatedAt": 1715511600000
+    }
+  },
+  "sensors": {
+    "sensor1": {
+      "id": "sensor1",
+      "status": "online",
+      "batteryLevel": 85,
+      "lastPing": 1715511600000
+    },
+    "sensor2": {
+      "id": "sensor2",
+      "status": "online",
+      "batteryLevel": 72,
+      "lastPing": 1715511600000
+    },
+    "sensor3": {
+      "id": "sensor3",
+      "status": "offline",
+      "batteryLevel": 30,
+      "lastPing": 1715511000000
+    },
+    "sensor4": {
+      "id": "sensor4",
+      "status": "online",
+      "batteryLevel": 95,
+      "lastPing": 1715511600000
+    },
+    "sensor5": {
+      "id": "sensor5",
+      "status": "online",
+      "batteryLevel": 65,
+      "lastPing": 1715511600000
+    },
+    "sensor6": {
+      "id": "sensor6",
+      "status": "online",
+      "batteryLevel": 78,
+      "lastPing": 1715511600000
+    },
+    "sensor7": {
+      "id": "sensor7",
+      "status": "online",
+      "batteryLevel": 92,
+      "lastPing": 1715511600000
+    },
+    "sensor8": {
+      "id": "sensor8",
+      "status": "offline",
+      "batteryLevel": 15,
+      "lastPing": 1715510000000
+    },
+    "sensor9": {
+      "id": "sensor9",
+      "status": "online",
+      "batteryLevel": 88,
+      "lastPing": 1715511600000
+    },
+    "sensor10": {
+      "id": "sensor10",
+      "status": "online",
+      "batteryLevel": 76,
+      "lastPing": 1715511600000
+    }
+  },
+  "users": {
+    "user1": {
+      "id": "user1",
+      "name": "Budi Santoso",
+      "email": "budi@example.com",
+      "role": "user",
+      "createdAt": 1715000000000
+    },
+    "user2": {
+      "id": "user2",
+      "name": "Siti Rahayu",
+      "email": "siti@example.com",
+      "role": "user",
+      "createdAt": 1715100000000
+    },
+    "user3": {
+      "id": "user3",
+      "name": "Ahmad Wijaya",
+      "email": "ahmad@example.com",
+      "role": "user",
+      "createdAt": 1715200000000
+    },
+    "admin1": {
+      "id": "admin1",
+      "name": "Admin Parkir",
+      "email": "admin@example.com",
+      "role": "admin",
+      "createdAt": 1714900000000
+    }
+  },
+  "bookings": {
+    "booking1": {
+      "id": "booking1",
+      "userId": "user1",
+      "slotId": "slot4",
+      "startTime": 1715511600000,
+      "endTime": 1715522400000,
+      "duration": 3,
+      "status": "active",
+      "paymentMethod": "qris",
+      "paymentStatus": "paid",
+      "amount": 15000,
+      "createdAt": 1715508000000
+    },
+    "booking2": {
+      "id": "booking2",
+      "userId": "user2",
+      "slotId": "slot10",
+      "startTime": 1715515200000,
+      "endTime": 1715522400000,
+      "duration": 2,
+      "status": "pending",
+      "paymentMethod": "qris",
+      "paymentStatus": "pending",
+      "amount": 10000,
+      "createdAt": 1715511600000
+    },
+    "booking3": {
+      "id": "booking3",
+      "userId": "user3",
+      "slotId": "slot7",
+      "startTime": 1715425200000,
+      "endTime": 1715432400000,
+      "duration": 2,
+      "status": "completed",
+      "paymentMethod": "idcard",
+      "paymentStatus": "paid",
+      "amount": 10000,
+      "createdAt": 1715421600000
+    },
+    "booking4": {
+      "id": "booking4",
+      "userId": "user1",
+      "slotId": "slot2",
+      "startTime": 1715339700000,
+      "endTime": 1715350500000,
+      "duration": 3,
+      "status": "completed",
+      "paymentMethod": "qris",
+      "paymentStatus": "paid",
+      "amount": 15000,
+      "createdAt": 1715336100000
+    }
+  }
+}
